@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <title>Verdictor | A plant disease predictor</title>
+</head>
+<body>
+    <div id="loader">
+        <h3>Accurate</h3>
+        <h3>relaible</h3>
+        <h3>innovative</h3>
+    </div>
+<main>
+    <nav>
+        
+            <a href="/">
+                <div id="nav-img">
+                    <img src="/images/Verdictor.png" alt="">
+                </div>
+            </a>
+            <div id="nav-text">
+                <h1>Verdictor</h1>
+                <h6>A plant disease predictor</h6>
+            </div>
+        
+    </nav>
+    <h1>Confused with your plant health?</h1>
+    <hr id="one">
+    <form id="uploadform" action="/upload" method="post" hidden enctype="multipart/form-data">
+        <input type="file" name="photo">
+    </form>
+    <div id="container">
+       <div class="txt">
+        <h1 id="o">Click here to</h1>
+        <h1>upload image...</h1>
+       </div>
+    </div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    document.querySelector("#container").addEventListener("click", function(){
+        document.querySelector("#uploadform input").click();
+    });
+    document.querySelector("#uploadform input").addEventListener("change",() => {
+        document.querySelector("#uploadform").submit();
+    });
+</script>
+<script src="/javascripts/home_page.js"></script>
+</body>
+</html>
