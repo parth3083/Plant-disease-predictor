@@ -62,6 +62,15 @@ Next Steps:
 Overall, this project demonstrates a innovative approach to plant disease prediction using a combination of ML, web development, and data management techniques.
 <br>
 <br>
+In order to run this project in your device :
+<br>
+npm i express 
+<br>
+go to the cmd and write the following the command:
+<br>
+express <app-name> -view=ejs
+<br>
+<br>
 In order to run this project you have to install the following packages:
 <br>
 <br>
