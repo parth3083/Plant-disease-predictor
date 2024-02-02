@@ -45,7 +45,7 @@ class ImageClassifier:
             if image_files:
                 first_image_path = os.path.join(image_folder, image_files[0])
             else:
-                return "No images found in the uploads folder."
+                return "PLease upload a JPG, JPEG OR PNG image"
         else:
             first_image_path = image_path
 

@@ -41,7 +41,6 @@ router.post('/upload', upload.single("photo"), async function (req, res, next) {
      console.log(imagePath);
      res.render('output', { prediction, imageName });
      setTimeout(() => {
-        console.log('Image deletion delayed by 2000ms');
         fs.unlink(imagePath, (err) => {
           if (err) {
             console.error('Error deleting image:', err);
