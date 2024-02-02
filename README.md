@@ -8,7 +8,6 @@ https://youtu.be/ocFpjSHqRyU?si=MUWskDHAi_IuXqOy
 <br>
 This project implements a plant disease prediction system using a combination of technologies:
 <br>
-<br>
 •	Machine Learning (ML) with Python: A PyTorch model is trained to identify plant diseases from images.
 <br>
 •	Express.js Backend: Handles API requests and processes image uploads.
@@ -81,6 +80,7 @@ npm i child-process
 npm i ejs
 <br>
 npm i python-shell
+<br>
 <br>
 for the python file :
 <br>
